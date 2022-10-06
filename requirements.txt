@@ -1,3 +1,6 @@
+pydantic>=1.8.0,<2.0.0
+uvicorn>=0.15.0,<0.16.0
+
 aiosqlite==0.17.0
 anyio==3.6.1
 bcrypt==4.0.0
@@ -8,13 +11,11 @@ finnhub-python==2.4.14
 h11==0.14.0
 h2==4.1.0
 hpack==4.0.0
-hypercorn==0.14.3
 hyperframe==6.0.1
 idna==3.4
 iso8601==1.1.0
 passlib==1.7.4
 priority==2.0.0
-pydantic==1.10.2
 PyJWT==2.5.0
 pypika-tortoise==0.1.6
 python-multipart==0.0.5
