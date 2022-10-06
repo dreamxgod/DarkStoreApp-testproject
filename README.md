@@ -13,5 +13,5 @@ You also can create your own user with Create User(3rd methon in "Started Requir
 ## Bugs that i didn't manage to fix:
 1.When you are creating new profile(post Create Profile method) please make shure that field user_id = your user id. You can see your user id while creating user,
 or you can get JsonWebTocken in 'Generate Token' method and then go to https://jwt.io/ and paste your token.
-2.Profile is not working with float values.
+2.Profile is not working with float values.  
 3.Docker compose is not working.
