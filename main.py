@@ -3,6 +3,7 @@ from app.models import *
 from app.ytd import *
 
 app = FastAPI(title="DarkStore Test Task", docs_url="/", redoc_url=None)
+JWT_SECRET = 'myjwtsecret'
 
 @app.post('/token', tags=["Started Requirements"])
 async def generate_token(form_data: OAuth2PasswordRequestForm = Depends()):

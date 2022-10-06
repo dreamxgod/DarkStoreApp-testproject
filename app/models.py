@@ -1,6 +1,8 @@
 from app.imports import *   
 from app.secrets import *
 
+JWT_SECRET = 'myjwtsecret'
+
 class User(Model):
     id = fields.IntField(pk=True)
     username = fields.CharField(50, unique=True)
