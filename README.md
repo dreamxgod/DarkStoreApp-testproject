@@ -11,7 +11,7 @@ This is test task according to https://www.notion.so/darkstoreapp/Portfolio-Mana
 1. Create `.env` file with **FINNHUB_API_KEY**: `echo
    'FINNHUB_API_KEY=your_key' > .env`. The key can be obtained in the [fihhhub
    dashboard](https://finnhub.io/dashboard).
-1. Run the server: `hypercorn main:app --reload`
+1. Run the server: `uvicorn main:app --reload`
 
 ## How to use this project:
 First of all you need to create an admin user, for that, please, /admin post methon in "Started Requirements" tag. You need this user to have access to "Admin Panel".
