@@ -5,7 +5,7 @@ from passlib.hash import bcrypt
 from tortoise import fields
 from tortoise.models import Model
 from tortoise.contrib.fastapi import register_tortoise
-from tortoise.contrib.pydantic import pydantic_model_creator
+from tortoise.contrib.pydantic.creator import pydantic_model_creator
 import jwt
 from typing import Generator, Iterable
 from decimal import Decimal

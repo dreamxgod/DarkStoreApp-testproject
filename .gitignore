@@ -167,3 +167,4 @@ db.sqlite3-wal/
 app/secrets.py
 .python-version
 
+db.sqlite*
