@@ -165,3 +165,5 @@ db.sqlite3-shm/
 db.sqlite3-wal/
 #Secrets file
 app/secrets.py
+.python-version
+
