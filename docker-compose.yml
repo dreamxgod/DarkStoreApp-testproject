@@ -2,6 +2,6 @@ version: '3.9'
 services:
   app:
     build: . 
-    command: hypercorn main:app --reload
     ports:
-      - "8080:8000"
+      - "8080:80"
+    env_file: ./.env

@@ -1,5 +1,4 @@
 from app.imports import *   
-from app.secrets import *
 
 JWT_SECRET = 'myjwtsecret'
 

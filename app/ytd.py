@@ -1,6 +1,6 @@
-from app.models import *
 from app.imports import *
-from app.secrets import *
+from app.settings import Settings
+from app.models import *
 
 class YTDPerformance(BaseModel):
     performance: Decimal
@@ -14,7 +14,7 @@ class YTDMinMax(BaseModel):
     max: YTDPoint
 
 def finnhub_client() -> finnhub.Client:
-    return finnhub.Client(api_key=yourAPIkey)   
+    return finnhub.Client(api_key=Settings().FINNHUB_API_KEY)   
 
 def get_ytd_borders() -> tuple[int, int]:
     year_start_timestamp = round(dt.datetime(dt.date.today().year, 1, 1).timestamp())

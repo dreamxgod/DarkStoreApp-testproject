@@ -44,7 +44,7 @@ async def update_profile_amount(profile_name: str, city: ProfileIn_Pydantic, tok
     payload = jwt.decode(token, JWT_SECRET, algorithms=['HS256'])
     current_user_id = payload.get('id')
     await Profile.filter(name=profile_name).update(**city.dict(exclude_unset=True))
-    return await Profile_Pydantic.from_queryset_single(Profile.get(name = profile_name, user_id = current_user_id))    
+    return await Profile_Pydantic.from_queryset_single(Profile.get(name = profile_name, user_id = current_user_id))
 
 @app.get('/profiles/', tags=["User's functions"])
 async def get_your_profiles(token : str = Depends(oauth2_scheme)):
@@ -136,7 +136,7 @@ async def delete_db_of_users(token : str = Depends(oauth2_scheme)):
 register_tortoise(
     app,
     db_url='sqlite://db.sqlite3',
-    modules={'models': ['main']},
+    modules={'models': ['app.main']},
     generate_schemas=True,
     add_exception_handlers=True
 )
